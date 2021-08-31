@@ -1,0 +1,10 @@
+TO DO:
+
+1. Generate Password button --> Series of prompts for PW criteria
+2. --> Select criteria
+3.      Choose password length between 8 and 128 characters
+4.      Choose lowercase, uppercase, numeric, and/or special characters
+5.      Input Validated, 1+ character type selected
+6. --> PW generated, matches chosen criteria
+7. --> PW is either displayed in alert or on the page
+
