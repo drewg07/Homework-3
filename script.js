@@ -1,5 +1,15 @@
 var generateBtn = document.querySelector("#generate");
-const specialCharacters = "!@#$%^&*";
+// const specialCharacters = "!@#$%^&*";
+// const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// const lowerCase = "abcdefghijklmnopqrstuvwxyz";
+// const number = "0123456789";
+
+const keys = {
+  specialCharacters: "!@#$%^&*",
+  upperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  lowerCase: "abcdefghijklmnopqrstuvwxyz",
+  number: "0123456789"
+};
 
 // Write password to the #password input
 function writePassword() {
@@ -32,19 +42,19 @@ function generatePassword() {
 
   var functionArray = {
     getCharacters: function() {
-      return pwCharacters[Math.floor(Math.random() * pwCharacters.length)];
+      return keys.specialCharacters[Math.floor(Math.random() * keys.specialCharacters.length)];
     },
 
     getUpperCases: function() {
-      return String.fromCharCode(Math.floor(Math.random()));
+      return keys.upperCase[Math.floor(Math.random() * keys.upperCase.length)];
     },
 
     getLowerCases: function() {
-      return String.fromCharCode(Math.floor(Math.random()));
+      return keys.lowerCase[Math.floor(Math.random() * keys.lowerCase.length)];
     },
 
     getNumbers: function() {
-      return String.fromCharCode(Math.floor(Math.random()));
+      return keys.number[Math.floor(Math.random() * keys.number.length)];
     }
   };
 
