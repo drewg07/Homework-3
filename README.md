@@ -30,6 +30,8 @@ THEN the password is either displayed in an alert or written to the page
 
 ## Final Product
 
+![This image shows the web application's appearance and functionality](./assets/App_Image)
+
 - The URL of the deployed application:
   https://drewg07.github.io/Homework-3/
 
